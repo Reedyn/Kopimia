@@ -1,0 +1,48 @@
+#header {
+    position: relative;
+    width: 100%;
+    background: url(../img/Kopimia.jpg);
+    background-size: cover;
+    background-position: center;
+    .site-icon {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        a {
+            
+            display: block;
+            @include box-sizing(border-box);
+            height: 60px;
+            padding: 15px;
+            border: 0;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }  
+    }
+    .site-name {
+        padding: 200px 0;
+        font-family: GoodDog, $font-stack;
+        text-align: center;
+        @include font-size(100);
+        a {
+            border: 0;
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .site-navigation {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        height: 60px;
+        a {
+            border: 0;
+            line-height: 60px;
+        }
+    }
+}
